@@ -44,6 +44,7 @@
   /* Переходи */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* Видалення зайвих вбудованих налаштувань*/
 .link {
   text-decoration: none;
@@ -111,12 +112,12 @@ ul {
   border-bottom: 1px solid var(--top-border-line-cl);
 }
 
-.top-line {
+.header__line {
   display: flex;
   align-items: center;
 }
 
-.nav {
+.pagination {
   display: flex;
   align-items: center;
 }
@@ -131,13 +132,6 @@ ul {
 
   display: block;
 }
-.logo-top {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.logo-footer {
-  margin-bottom: 20px;
-}
 .logo-blue {
   color: var(--accent-txt-cl);
 }
@@ -145,38 +139,48 @@ ul {
   color: var(--light-txt-cl);
 }
 
-.nav-list,
-.contacts-list {
+/* блок не має рухати сусідів!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.logo-top {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+
+.pagination__list,
+.header__contacts {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 
   display: flex;
 }
-.nav-list {
+.pagination__list {
   margin-left: 93px;
 }
-.contacts-list {
+.header__contacts {
   color: var(--secondary-txt-cl);
   margin-left: auto;
 }
-.nav-list-item:not(:last-child),
-.contacts-list-item:not(:last-child) {
+.pagination__item:not(:last-child),
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
-.contacts-list-link:hover,
-.contacts-list-link:focus {
+.pagination__link:hover,
+.pagination__link:focus,
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-txt-cl);
 }
-.nav-list-link.active {
+.pagination__link.active {
   color: var(--accent-txt-cl);
   position: relative;
 }
 
-.nav-list-link.active::after {
+.pagination__link.active::after {
   content: "";
   display: block;
   width: 100%;
@@ -188,8 +192,8 @@ ul {
   bottom: -1.5%;
 }
 
-.nav-list-link,
-.contacts-list-link {
+.pagination__link,
+.header__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -197,7 +201,7 @@ ul {
 
   transition: color var(--animation);
 }
-.contact-list-icon {
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
 }
