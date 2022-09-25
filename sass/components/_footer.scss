@@ -1,0 +1,30 @@
+.footer {
+  color: var(--light-txt-cl);
+  background-color: var(--dark-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__contacts {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__socials {
+  margin-right: 93px;
+}
+.footer__socials-title {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__socials-link {
+  background-color: var(--social-icon-cl-10);
+  color: var(--light-txt-cl);
+}

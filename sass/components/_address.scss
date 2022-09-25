@@ -1,0 +1,23 @@
+.address-group {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+.address {
+  font-style: normal;
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link {
+  transition: color var(--animation);
+}
+.address__contacts {
+  color: var(--light-txt-cl-60);
+  transition: color var(--animation);
+}
+.address__contacts:hover,
+.address__contacts:focus,
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-txt-cl);
+}

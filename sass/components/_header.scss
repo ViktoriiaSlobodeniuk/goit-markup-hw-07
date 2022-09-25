@@ -1,0 +1,38 @@
+.header {
+  border-bottom: 1px solid var(--top-border-line-cl);
+
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-cl);
+
+    display: flex;
+    margin-left: auto;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-txt-cl);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
