@@ -1,4 +1,3 @@
-/* Модальне вікно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -54,8 +53,9 @@
   cursor: pointer;
 
   transition: fill var(--animation);
-}
-.close__btn:hover,
-.close__btn:focus {
-  fill: var(--accent-bg-cl);
+
+  &__btn:hover,
+  &__btn:focus {
+    fill: var(--accent-bg-cl);
+  }
 }

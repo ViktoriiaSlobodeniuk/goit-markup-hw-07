@@ -14,14 +14,16 @@
   display: flex;
   text-align: center;
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .team__item {
   box-shadow: var(--box-shadow-tm);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bg-cl);
 }
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team__group {
   padding-top: 30px;
   padding-bottom: 30px;
