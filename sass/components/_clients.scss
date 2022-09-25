@@ -1,3 +1,6 @@
+.clients__section {
+  @include section;
+}
 .clients__title {
   font-size: 36px;
   line-height: 42px;
@@ -8,6 +11,7 @@
 }
 
 .clients__list {
+  @include list;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -17,6 +21,7 @@
   height: 92px;
 }
 .clients__link {
+  @include link;
   display: flex;
   width: 100%;
   height: 100%;

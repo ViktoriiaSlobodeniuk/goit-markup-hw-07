@@ -1,13 +1,18 @@
 .address {
   font-style: normal;
 
+  &__list {
+    @include list;
+  }
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
   &__link {
+    @include link;
     transition: color var(--animation);
   }
   &__contacts {
+    @include link;
     color: var(--light-txt-cl-60);
     transition: color var(--animation);
   }

@@ -1,4 +1,8 @@
+.features__section {
+  @include section;
+}
 .features__list {
+  @include list;
   display: flex;
   gap: 30px;
 }

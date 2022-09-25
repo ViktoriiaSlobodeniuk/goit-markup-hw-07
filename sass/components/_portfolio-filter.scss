@@ -1,14 +1,18 @@
-.filter {
+.portfolio__section {
+  @include section;
+}
+.portfolio-filter {
+  @include list;
+
   display: flex;
   justify-content: center;
 
   margin-bottom: 50px;
 
-
   &__item:not(:last-child) {
     margin-right: 8px;
   }
-  
+
   &__btn {
     font-family: inherit;
     font-weight: 500;

@@ -40,8 +40,8 @@
 
   transition: border-color var(--animation);
 
-  &__input:hover,
-  &__input:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-bg-cl);
   }
 }
@@ -74,8 +74,8 @@
 
   transition: border-color var(--animation);
 
-  &__message:hover,
-  &__message:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-bg-cl);
   }
 }

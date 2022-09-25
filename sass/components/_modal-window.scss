@@ -54,8 +54,8 @@
 
   transition: fill var(--animation);
 
-  &__btn:hover,
-  &__btn:focus {
+  &:hover,
+  &:focus {
     fill: var(--accent-bg-cl);
   }
 }

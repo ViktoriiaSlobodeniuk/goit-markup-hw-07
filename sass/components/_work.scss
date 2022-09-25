@@ -1,5 +1,5 @@
-.work {
-  padding-top: 0;
+.work__section {
+  @include section($pt: null);
 }
 .work__title {
   font-size: 36px;
@@ -10,6 +10,7 @@
   margin-bottom: 50px;
 }
 .work__list {
+  @include list;
   display: flex;
 }
 .work__item:not(:last-child) {

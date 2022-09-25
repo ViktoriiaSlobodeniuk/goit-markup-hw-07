@@ -1,9 +1,12 @@
 .project__list {
+  @include list;
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .project__link {
+  @include link;
   display: block;
 
   &__link:hover,

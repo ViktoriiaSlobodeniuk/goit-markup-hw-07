@@ -1,4 +1,6 @@
-.team {
+.team__section {
+  @include section;
+
   background-color: var(--light-bg-cl);
 }
 .team__title {
@@ -11,6 +13,7 @@
 }
 
 .team__list {
+  @include list;
   display: flex;
   text-align: center;
 }
