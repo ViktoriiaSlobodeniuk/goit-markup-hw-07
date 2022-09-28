@@ -1,26 +1,20 @@
-.work__section {
-  @include section($pt: null);
+.section--no_padding-top {
+  padding-top: 0;
 }
-.work__title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
 
-  text-align: center;
-  margin-bottom: 50px;
-}
-.work__list {
-  @include list;
+.work {
   display: flex;
 }
-.work__item:not(:last-child) {
-  margin-right: 30px;
+.work__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work__item {
   position: relative;
 }
-.work__subtitle {
+.work__title {
   position: absolute;
   bottom: 0;
   width: 100%;

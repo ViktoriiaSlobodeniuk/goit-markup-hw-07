@@ -1,37 +1,34 @@
-.portfolio__section {
-  @include section;
-}
 .portfolio-filter {
-  @include list;
-
   display: flex;
   justify-content: center;
 
   margin-bottom: 50px;
+}
 
-  &__item:not(:last-child) {
+.portfolio-filter__item {
+  &:not(:last-child) {
     margin-right: 8px;
   }
+}
 
-  &__btn {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    border: none;
-    background-color: var(--light-bg-cl);
+.portfolio-filter__btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  background-color: var(--light-bg-cl);
 
-    border-radius: 4px;
-    padding: 6px 22px;
+  border-radius: 4px;
+  padding: 6px 22px;
 
-    transition: background-color var(--animation), color var(--animation),
-      box-shadow var(--animation);
-  }
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation);
 
-  &__btn:hover,
-  &__btn:focus {
+  &:hover,
+  &:focus {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
     box-shadow: var(--box-shadow-btn);

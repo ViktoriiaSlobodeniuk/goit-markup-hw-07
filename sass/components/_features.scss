@@ -1,13 +1,18 @@
-.features__section {
-  @include section;
-}
-.features__list {
-  @include list;
+.features {
   display: flex;
   gap: 30px;
 }
 .features__item {
   flex-basis: calc(100% / 4);
+}
+.features__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: var(--light-bg-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .features__title {
   font-size: inherit;
@@ -17,13 +22,4 @@
 }
 .features__text {
   color: var(--secondary-txt-cl);
-}
-.features__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background: var(--light-bg-cl);
-  border-radius: 4px;
-  margin-bottom: 30px;
 }

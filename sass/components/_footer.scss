@@ -4,12 +4,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__contacts {
+  &__container {
     display: flex;
     align-items: baseline;
   }
 
-  &__address {
+  &__contacts {
     margin-right: 70px;
     flex-grow: 1;
   }

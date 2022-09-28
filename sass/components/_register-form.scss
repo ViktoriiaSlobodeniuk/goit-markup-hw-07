@@ -16,8 +16,10 @@
   display: block;
   position: relative;
 }
-.register-form__field:not(:last-child) {
-  margin-bottom: 10px;
+.register-form__field {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .register-form__label {

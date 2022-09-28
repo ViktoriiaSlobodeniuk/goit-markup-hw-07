@@ -1,19 +1,8 @@
-.team__section {
-  @include section;
-
+.section--ather_background {
   background-color: var(--light-bg-cl);
 }
-.team__title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
 
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team__list {
-  @include list;
+.team {
   display: flex;
   text-align: center;
 }
@@ -23,15 +12,17 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bg-cl);
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
+.team__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__group {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team__name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -39,7 +30,7 @@
 
   margin-bottom: 10px;
 }
-.team__position {
+.team__text {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;

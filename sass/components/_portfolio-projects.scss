@@ -1,23 +1,23 @@
-.project__list {
-  @include list;
-
+.project {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .project__link {
-  @include link;
   display: block;
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     box-shadow: var(--box-shadow-pf-hover);
   }
 }
+
 .project__tumb {
   position: relative;
   overflow: hidden;
 }
+
 .project__overlay-txt {
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -32,10 +32,11 @@
 
   transform: translateY(100%);
   transition: transform var(--animation);
-}
-.project__link:hover .project__overlay-txt,
-.project__link:focus .project__overlay-txt {
-  transform: translateY(0);
+
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .project__group {
